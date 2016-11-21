@@ -1,0 +1,146 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+.type-product{
+
+}
+
+.type-adventure{
+	position: relative;
+
+.read-article{
+	position: absolute;
+  top:10px;
+
+	h2{
+		font-size: 20px;
+		font-weight: bold;
+
+a {
+    color: white;
+}
+	}
+}
+}
+
+
+
+
+.adventure-section{
+	display: inline-flex;
+
+
+.small-images{
+width: 40%;
+
+}
+.smaller-images{
+  width: 50%;
+  display: inline-flex;
+}
+}
+h1{
+	text-transform: uppercase;
+}
+
+.boxy2{
+	border-style: groove;
+	border-width: 2px;
+	width: 30%;
+	height: 350px;
+	display: inline-flex;
+	flex-direction: row;
+	margin: 10px;
+	.entry-title{
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+}
+.box-area{
+  margin-left: 80px;
+}
+.section-boxes{
+  border-style: groove;
+	border-width: 2px;
+	width: 20%;
+	height: 200px;
+	display: inline-flex;
+	flex-direction: column;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	img{
+		height: 100px;
+    width: 50px;
+	}
+	p{
+		font-size: 10px;
+	}
+	form{
+		padding-bottom: 10px;
+	}
+
+}
+
+.bannerimage{
+  width: 100%;
+  height: 700px;
+
+}
+
+.entry-header-product{
+  float: left;
+  width: 50%;
+}
+.entry-content-product{
+  float: left;
+  width: 50%;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}

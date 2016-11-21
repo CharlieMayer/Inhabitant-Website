@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0px solid $color__site-green;
+	padding: 0.8rem 1.5rem;
+
+	background: $color__site-green;
+	color: #fff;
+
+
+	&:hover {
+		background-color: $color_site-purple;
+	}
+
+}
+
+/* Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+
+	&:focus {
+		color: #111;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+label {
+	color: $color_site-purple;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+span.required {
+	color: #D99054;
+}

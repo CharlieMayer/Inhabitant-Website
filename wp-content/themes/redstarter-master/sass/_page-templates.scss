@@ -1,0 +1,321 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+
+.contact-content{
+  width: 60%;
+  float: left;
+}
+/* Advenure Archive Page */
+.adventure-articles {
+  display: flex;
+  flex-wrap: wrap;
+
+  article {
+    flex-basis: 50%;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+/* Header */
+
+.site-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E1E1E1;
+
+  .site-branding {
+    background-image: url('../../images/logos/inhabitent-logo-tent.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    margin-left: 5%;
+
+    .link-space {
+      height: 80px;
+      width: 80px;
+    }
+  }
+}
+
+.home {
+  .site-branding {
+    background-image: url('../../images/logos/inhabitent-logo-tent-white.svg');
+  }
+}
+
+/* Sidebar */
+
+.widget-area {
+  width: 100%;
+  padding: 1rem 0 1rem 1rem;
+
+  @media only screen and (min-width: 800px) {
+    max-width: 30%;
+    padding-left: 2rem;
+    float: right;
+  }
+
+  .textwidget p {
+    margin-bottom: 0;
+  }
+
+}
+
+/* Content Area */
+
+.site-content {
+  padding: 0 2rem;
+}
+
+.content-area {
+  width: 100%;
+  padding-top: 2rem;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.page-template-contact, .post-type-archive-journal, .single-journal {
+  .content-area {
+    @media only screen and (min-width: 800px) {
+      width: 70%;
+      padding-right: 2rem;
+      float: left;
+      border-right: 1px solid #E1E1E1;
+      border-bottom: 0px solid #fff;
+    }
+  }
+}
+
+  /* Comments */
+
+  .comment-author-avatar img {
+    border-radius: 50%;
+  }
+
+  .comment-list {
+    .children {
+      margin-left: 5rem;
+    }
+    .fn {
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    time {
+      color: #959595;
+    }
+  }
+
+
+  /* echo get_field('price') or get_post_meta() */
+
+  /* Journal posts */
+
+
+  .post-type-archive-journal .entry-meta a, .post-type-archive-journal .entry-title a, .single-journal .entry-meta a, .single-journal .entry-title a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+  }
+  .journal-image{
+    width: 600px;
+  }
+  .post-type-archive-journal, .single-journal {
+      float:left;
+    .entry-header {
+
+      width: 50%;
+      position: relative;
+
+      .entry-title {
+        padding: 0.5rem;
+        background-color: $color__site-green;
+        position: absolute;
+        max-width: 80%;
+        top: 5px;
+        left: 0;
+      }
+
+      .entry-meta {
+        padding: 0.5rem 0.8rem;
+        background-color: $color__site-green;
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+        color: #fff;
+      }
+    }
+
+  }
+
+
+/* ------------------------ */
+/* ------------------------ */
+/* ------------------------ */
+  /* ------------------------ */
+
+/* Site Footer */
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  clear: both;
+  background-image: url("../../images/dark-wood.png");
+  min-height: 200px;
+  padding-top: 3rem;
+
+  @media only screen and (min-width: 800px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  li {
+    display: block;
+    margin-left: 10%;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .site-info {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    @media only screen and (min-width: 800px) {
+      flex-basis: 70%;
+      justify-content: flex-start;
+      padding: 0 1rem 0 2rem;
+    }
+  }
+
+  .footer-logo {
+    padding: 2rem;
+    @media only screen and (min-width: 800px) {
+      flex-basis: 30%;
+      padding: 0 3rem 0 1rem;
+    }
+
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Home Page */
+
+.homePage {
+  .site-header {
+    align-items: flex-start;
+    background: url('../../images/home-hero.jpg') no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    @media only screen and (min-width: 600px) {
+      min-height: 425px;
+    }
+
+    @media only screen and (min-width: 800px) {
+      min-height: 600px;
+    }
+  }
+
+  .home-content {
+    width: 100%;
+    padding: 5rem;
+
+    .journal-section {
+      display: flex;
+      justify-content: space-between;
+      article.journal {
+        flex-basis: 30%;
+      }
+    }
+
+    .adventure-section {
+      display: flex;
+      justify-content: space-between;
+
+      .small-images {
+        flex-basis: 45%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .img2 {
+          flex-basis: 100%
+        }
+        .smaller-images {
+          flex-basis: 100%;
+          display: flex;
+          img {
+            flex-basis: 50%;
+          }
+        }
+      }
+
+      article {
+        flex-basis: 45%;
+        position: relative;
+
+        .read-article {
+          position: absolute;
+          margin: 1rem;
+          top: 0;
+          right: 0;
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  article {
+    flex-basis: 25%;
+
+    .entry-header {
+      height: 300px;
+      width: 100%;
+      overflow: hidden;
+    }
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.single-product {
+  article {
+    display: flex;
+
+    header {
+      flex-basis: 50%;
+      padding: 2rem;
+    }
+    .entry-content {
+      flex-basis: 50%;
+    }
+
+  }
+}
